@@ -1,0 +1,5 @@
+package com.thbs.model;
+
+public class Quote {
+
+}

@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<div class="container">
+  <h3 style="color: darkorange;">Today's Quote</h3>
+  <hr>
+  <div *ngFor="let quote of quotes | async">
+    <div class="row">
+      <div class="col-sm-8">
+        <h3>{{quote.quoteName}}</h3>
+        <br>
+        <br>
+        
+      </div>
+      <div class="col-sm-4">
+        <div class="well-sm">
+          <b style="color:firebrick;">Author :</b> {{quote.author}}
+        </div>
+        <div class="well-sm" >
+          <b style="color:mediumblue;">Category :</b> {{quote.category}}
+        </div>
+        <a (click)="updateQuote(quote.id)" class="btn btn-info btn-sm">
+          <span class="glyphicon glyphicon-pencil"></span>
+        </a>
+        
+      </div>
+    </div>
+    <hr>
+    </div>
+
+</div>
+  

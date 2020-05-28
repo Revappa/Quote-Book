@@ -1,0 +1,5 @@
+package com.thbs.controller;
+
+public class QuoteController {
+
+}
